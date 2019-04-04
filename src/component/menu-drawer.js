@@ -10,6 +10,8 @@ import inicioDeSesion from './inicioDeSesion'
 import registrarse from './registrarse'
 import menuPrecios from './menuPrecios'
 import BebidasYComidas from './BedidasYComidas'
+import reserva from './reserva'
+
 
 const MenuDrawer = createDrawerNavigator ({
     Inicio:
@@ -17,7 +19,7 @@ const MenuDrawer = createDrawerNavigator ({
         screen: menuPrincial,
         navigationOptions: 
             {
-            drawerLabel: 'Inicio de la App',
+            drawerLabel: 'Bienvenidos a "El Comal"',
             },
         },
 
@@ -40,6 +42,11 @@ const MenuDrawer = createDrawerNavigator ({
          {
         screen: BebidasYComidas,
         },
+
+    reserva:
+    {
+        screen: reserva,
+    }
 }, 
 
 );

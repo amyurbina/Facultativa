@@ -10,7 +10,8 @@ import {
 const menuPrecios =(props) => {
 
     return(
-        <View>
+        <View style={{fontSize:30,textAlign:'center', alignItems: 'center', width: '100%'}} >
+
             <View>
                 <Text>Menu</Text>
             </View>
@@ -28,16 +29,16 @@ const menuPrecios =(props) => {
 
             <Image
                  
-                 source={require('./../../assets/Menu.png')}
+                 source={require('./../../assets/Menu.png')} style={{resizeMode: 'cover', width: 24, height: 24,}}
             />
              <Image
                  
-                 source={require('./../../assets/dinero.png')}
+                 source={require('./../../assets/dinero.png')} style={{resizeMode: 'cover', width: 24, height: 24,}}
             />
 
             <Image
                  
-                 source={require('./../../assets/propina.png')}
+                 source={require('./../../assets/propina.png')} style={{resizeMode: 'cover', width: 24, height: 24,}}
             />
 
         </View>

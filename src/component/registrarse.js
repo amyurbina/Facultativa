@@ -11,14 +11,14 @@ import {
 const Registrarse=(props) => {
 
     return(
-        <View>
+        <View style={{fontSize:30,textAlign:'center', alignItems: 'center', width: '100%',resizeMode: 'cover',}} >
             <View>
                 <Text> Registrarse </Text>
             </View>
 
             <Image
-                 
-                 source={require('./../../assets/imagenelcomal.png')}
+                  
+                 source={require('./../../assets/imagenelcomal.png')} style={{resizeMode: 'cover', width: 24, height: 24,}}
             />
 
             <View>
@@ -42,7 +42,7 @@ const Registrarse=(props) => {
 
             <Image
                  
-                 source={require('./../../assets/gracias.png')}
+                 source={require('./../../assets/gracias.png')} style={{resizeMode: 'cover', width: 24, height: 24,}}
             />
 
         </View>

@@ -5,28 +5,28 @@ const BebidasYComidas =(props) => {
 
     return(
 
-        <View>
+        <View style={{fontSize:30,textAlign:'center', alignItems: 'center', width: '100%'}} >
             <View>
                 <Text> Menu de Bebidas y Comidas Típicas </Text>
             </View>
 
             <Image
            
-                 source={require('./../../assets/pozol.png')}
+                 source={require('./../../assets/pozol.png')} style={{resizeMode: 'cover', width: 24, height: 24,}}
             />
              <Image
                  
-                 source={require('./../../assets/cacao.png')}
+                 source={require('./../../assets/cacao.png')} style={{resizeMode: 'cover', width: 24, height: 24,}}
             />
 
             <Image
                  
-                 source={require('./../../assets/gallopinto.png')}
+                 source={require('./../../assets/gallopinto.png')} style={{resizeMode: 'cover', width: 24, height: 24,}}
             />
 
             <Image
                  
-                 source={require('./../../assets/nacatamal.png')}
+                 source={require('./../../assets/nacatamal.png')} style={{resizeMode: 'cover', width: 24, height: 24,}}
             />
 
             <View>

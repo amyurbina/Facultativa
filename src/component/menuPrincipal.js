@@ -11,34 +11,41 @@ const MenuPrincipal =(props) => {
 
     return(
 
-        <View  >
+        <View style={{fontSize:30,textAlign:'center', alignItems: 'center', width: '100%',}} >
+
             <View>
                 <Text style={styles.Titulo}>El Comal</Text>
             </View>
 
-            <Image
-                style={styles.banner}
-                 source={require('./../../assets/banner-de-portada.jpg')}
-                 width={50}
-                 height={80}
+           <View  style={styles.Banner} >
+           <Image
+                style={styles.imagenbanner}
+                 source={require('./../../assets/banner-de-portada.jpg')} 
+            
             />
+           </View>
 
-            <View>
+            <View style={styles.botonsesion} >
                 <Button title='Iniciar Sesión' 
-                 width={50}
-                 height={80} />
+                 width={170}
+                 height={80} 
+                 top={25}/>
+                 
             </View>
 
-            <View>
+            <View  style={styles.botoncontacto} >
                 <Button title='Contactanos' 
-                 width={50}
-                 height={80} />
+                 width={70}
+                 height={80} 
+                 top={25}
+                 
+                 />
             </View>
 
             <View style={styles.contenedorImagen}>
                 <Image
                     style={styles.imagen1}
-                    source={require('./../../assets/Imagen1.png')}
+                    source={require('./../../assets/Imagen1.png')} 
                 />
             </View>
 
@@ -50,27 +57,48 @@ const styles = StyleSheet.create({
 
     Titulo: {
         marginBottom: 15,
-        color: 'green',
+        color: '#078D0F',
         fontSize: 30,
-        
     },
     
-    boton: {
-        width: 100,
-        height: 30,
-        margin: 8,
-        color: 'blue'
-    },
     imagen1: {
-        width: 300,
-        height: 100,
+        width: 330,
+        height: 110,
         resizeMode: 'cover',
+        marginTop: 25,
     },
     contenedorImagen: {
         width: '100%',
         alignItems: 'center',
         marginTop: 8,
+        resizeMode: 'cover', 
+        height: '100%',
+    },
+        Banner:{
+        width: '20%',
+        alignItems: 'center',
+        marginTop: 8,
+        resizeMode: 'cover', 
+        height: '20%',
+    },
+    botoncontacto:{
+        width: '40%',
+        alignItems: 'center',
+        marginTop: 20,
+        resizeMode: 'cover', 
+    },
+    botonsesion:{
+        width: '40%',
+        alignItems: 'center',
+        marginTop: 14,
+        resizeMode: 'cover', 
+    },
+    imagenbanner: {
+        width: 320,
+        height: 160,
+        resizeMode: 'cover'
     },
 });
 
 export default MenuPrincipal
+
