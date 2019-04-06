@@ -11,6 +11,7 @@ import registrarse from './registrarse'
 import menuPrecios from './menuPrecios'
 import BebidasYComidas from './BedidasYComidas'
 import reserva from './reserva'
+import ListaContainer from './../container/listaContainer'
 
 
 const MenuDrawer = createDrawerNavigator ({
@@ -46,6 +47,11 @@ const MenuDrawer = createDrawerNavigator ({
     reserva:
     {
         screen: reserva,
+    },
+
+    ListaContainer:
+    {
+        screen: ListaContainer,
     }
 }, 
 
