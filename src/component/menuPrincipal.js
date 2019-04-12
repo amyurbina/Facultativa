@@ -29,7 +29,11 @@ const MenuPrincipal =(props) => {
                 <Button title='Iniciar Sesión' 
                  width={170}
                  height={80} 
-                 top={25}/>
+                 top={25}
+                 onPress={() => {
+                    props.navigation.navigate('InicioDeSesion');
+                }}
+                 />
                  
             </View>
 
@@ -38,7 +42,9 @@ const MenuPrincipal =(props) => {
                  width={70}
                  height={80} 
                  top={25}
-                 
+                 onPress={() => {
+                    props.navigation.navigate('Contacto');
+                }}
                  />
             </View>
 
@@ -68,17 +74,17 @@ const styles = StyleSheet.create({
         marginTop: 25,
     },
     contenedorImagen: {
-        width: '100%',
+        width: '80%',
         alignItems: 'center',
         marginTop: 8,
         resizeMode: 'cover', 
-        height: '100%',
+        height: '80%',
     },
         Banner:{
         width: '20%',
         alignItems: 'center',
         marginTop: 8,
-        resizeMode: 'cover', 
+         
         height: '20%',
     },
     botoncontacto:{
@@ -88,15 +94,15 @@ const styles = StyleSheet.create({
         resizeMode: 'cover', 
     },
     botonsesion:{
-        width: '40%',
+        width: '30%',
         alignItems: 'center',
         marginTop: 14,
         resizeMode: 'cover', 
     },
     imagenbanner: {
-        width: 320,
+        width: 330,
         height: 160,
-        resizeMode: 'cover'
+        
     },
 });
 

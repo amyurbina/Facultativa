@@ -2,7 +2,6 @@ import React from 'react';
 import {
     View,
     Text,
-    Button,
     Image,
     StyleSheet
 } from 'react-native';
@@ -13,36 +12,93 @@ const menuPrecios =(props) => {
         <View style={{fontSize:30,textAlign:'center', alignItems: 'center', width: '100%'}} >
 
             <View>
-                <Text>Menu</Text>
+            <Text style={styles.Titulo}> Menú </Text>
+            </View>
+
+            <View >
+                <Text style={styles.CatPrecio}> Catalogo de Precios </Text>
             </View>
 
             <View>
-                <Text>Selecciona lo que deseas ordenar</Text>
+                <Text style={styles.Titulo}> Precios </Text>
             </View>
 
-            <View>
-                <Button title='Platillos y Bebidas' />
-            </View>
-            <View>
-                <Text> Precios </Text>
-            </View>
-
+            <View style={styles.Menu}>
             <Image
-                 
-                 source={require('./../../assets/Menu.png')} style={{resizeMode: 'cover', width: 24, height: 24,}}
+                 style={styles.imagenMenu}
+                 source={require('./../../assets/Menu.png')} 
             />
-             <Image
-                 
-                 source={require('./../../assets/dinero.png')} style={{resizeMode: 'cover', width: 24, height: 24,}}
-            />
-
+            </View>
+            
+            <View style={styles.Dinero} >
             <Image
-                 
-                 source={require('./../../assets/propina.png')} style={{resizeMode: 'cover', width: 24, height: 24,}}
+                 style={styles.imagenDinero}
+                 source={require('./../../assets/dinero.png')} 
             />
+            </View>
+
+            <View style={styles.Propina} >
+            <Image
+                 style={styles.imagenPropina}
+                 source={require('./../../assets/propina.png')} 
+            />
+            </View>
 
         </View>
     )
 }
 
+const styles = StyleSheet.create({
+
+    Titulo: {
+        marginBottom: 15,
+        color: '#078D0F',
+        fontSize: 30,
+    },
+    CatPrecio: {
+        marginBottom: 15,
+        color: '#051F82',
+        fontSize: 30,
+    },
+
+    imagenMenu: {
+        width: 360,
+        height:250,
+        
+    },
+
+    Menu:{
+        width: '50%',
+        alignItems: 'center',
+        marginTop: 14,
+        height: '40%',
+    },
+
+    Dinero:{
+        width: '10%',
+        alignItems: 'center',
+        marginTop: 4,
+        height: '10%',
+    },
+
+    imagenDinero: {
+        width: 100,
+        height: 100,
+        
+    },
+    Propina:{
+        width: '30%',
+        alignItems: 'center',
+        marginTop: 2,
+        height: '20%',
+    },
+
+    imagenPropina: {
+        width: 150,
+        height: 150,
+        
+    },
+
+});
 export default menuPrecios
+

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Lista from './../component/lista';
 import firebase from 'react-native-firebase';
 
-class ListaContainer extends Component {
+class ComidasyBebidas extends Component {
     constructor(props) 
     {
         super(props)
@@ -31,8 +31,13 @@ class ListaContainer extends Component {
                     case'added':{
                         datos.push({
                             key: cambio.doc.id,
-                            title: cambio.doc.data().title,
-                            url:cambio.doc.data().url,
+                            Name: cambio.doc.data().Name,
+                            Telefono: cambio.doc.data().Telefono,
+                            Fecha: cambio.doc.data().Fecha,
+                            Hora: cambio.doc.data().Hora,
+                            Personas: cambio.doc.data().Personas,
+                            Observaciones: cambio.doc.data().Observaciones,
+                            
 
                         });
                         break;
@@ -63,5 +68,5 @@ class ListaContainer extends Component {
     }
 }
 
-export default ListaContainer
+export default ComidasyBebidas
 
